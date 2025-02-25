@@ -1,5 +1,16 @@
-let js = 'amazing';
-if (js === 'amazing') alert('JavaSript is FUN!');
+const now = new Date();
+const curYear = now.getFullYear();
 
-40 + 8 + 23 - 10;
-console.log(40 + 8 + 23 - 10);
+const ageMichael = curYear - 1970;
+const ageAisha = curYear - 1972;
+console.log('ageMichael: ', ageMichael);
+console.log('ageAisha: ', ageAisha);
+
+let x = 5;
+let y = 5;
+x++;
+++y;
+console.log(x++);
+console.log(++y);
+console.log(x);
+console.log(y);
