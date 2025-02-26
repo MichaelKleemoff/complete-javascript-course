@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 // 33. FUNCTIONS -
 function logger() {
 	console.log('My name is Michael');
@@ -42,6 +43,7 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1972);
 console.log(age2);
 
+// 35. ARROW FUNCTIONS -
 // Arrow Function (ES6+) -
 const calcAge3 = (birthYear) => 2025 - birthYear;
 const age3 = calcAge3(2013);
@@ -63,3 +65,19 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 const yearsUntilMyRetirement = yearsUntilRetirement(1970, 'Michael');
 console.log(yearsUntilMyRetirement);
 console.log(yearsUntilRetirement(1955, 'Ali'));
+*/
+
+// 36. FUNCTIONS CALLING OTHER FUNCTIONS -
+function cutFruitPieces(fruit) {
+	return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+	const applePieces = cutFruitPieces(apples);
+	const orangePieces = cutFruitPieces(oranges);
+
+	const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
+	return juice;
+}
+
+console.log(fruitProcessor(5, 4));
