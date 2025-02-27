@@ -107,6 +107,4 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1970, 'Michael'));
 console.log(yearsUntilRetirement(1972, 'Aisha'));
-console.log(yearsUntilRetirement(2002, 'Qayyam'));
-console.log(yearsUntilRetirement(2004, 'Al-Haqq'));
-console.log(yearsUntilRetirement(2013, 'Aziz'));
+console.log(yearsUntilRetirement(1948, 'Lubov'));
