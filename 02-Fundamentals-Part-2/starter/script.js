@@ -288,3 +288,11 @@ const jonas = {
 console.log(jonas);
 console.log(jonas.getSummary());
 */
+
+// 46. ITERATION: THE FOR LOOP -
+for (let set = 1; set <= 3; set++) {
+	console.log(`Doing Set ${set}`);
+	for (let rep = 1; rep <= 10; rep++) {
+		console.log(`  Lifting weights repetition ${rep} 🏋️‍♂️`);
+	}
+}
