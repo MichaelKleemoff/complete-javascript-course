@@ -81,7 +81,7 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(5, 4));
-*/
+
 
 // 37. REVIEWING FUNCTIONS -
 
@@ -108,3 +108,61 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1970, 'Michael'));
 console.log(yearsUntilRetirement(1972, 'Aisha'));
 console.log(yearsUntilRetirement(1948, 'Lubov'));
+*/
+
+// 39. INTRODUCTION TO ARRAYS -
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+// console.log(friends[2][friends[2].length - 1]);
+
+// console.log(friends[2]);
+// friends[2] = 'Jay';
+// console.log(friends[2]);
+// console.log(friends);
+
+const firstName = 'Michael';
+
+// const getCurYear = () => {
+// 	const date = new Date();
+// 	const curYear = date.getFullYear();
+// 	return curYear;
+// };
+
+const calcAge = (birthYear) => {
+	const date = new Date();
+	const curYear = date.getFullYear();
+	return curYear - birthYear;
+};
+
+const michael = [
+	firstName,
+	'Kleemoff',
+	calcAge(1970),
+	'software engineer',
+	friends,
+];
+console.log(michael);
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+	calcAge(years[0]),
+	calcAge(years[1]),
+	calcAge(years[years.length - 1]),
+];
+
+console.log(ages);
