@@ -287,7 +287,7 @@ const jonas = {
 // "Jonas is a 46-year old teacher, and he has a/no driver's license"
 console.log(jonas);
 console.log(jonas.getSummary());
-*/
+
 
 // 46. ITERATION: THE FOR LOOP -
 for (let set = 1; set <= 3; set++) {
@@ -295,4 +295,64 @@ for (let set = 1; set <= 3; set++) {
 	for (let rep = 1; rep <= 10; rep++) {
 		console.log(`  Lifting weights repetition ${rep} 🏋️‍♂️`);
 	}
+}
+*/
+
+// 47. LOOPING ARRAYS, BREAKING AND CONTINUING -
+
+const jonasArray = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1991,
+	'teacher',
+	['Michael', 'Peter', 'Steven'],
+	true,
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+	// Reading from `jonasArray`
+	console.log(jonasArray[i], typeof jonasArray[i]);
+
+	// Filling `types` array
+	// types[i] = typeof jonasArray[i];
+	types.push(typeof jonasArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+function calcAge(birthYear) {
+	const date = new Date();
+	const year = date.getFullYear();
+	return year - birthYear;
+}
+
+for (let i = 0; i < years.length; i++) {
+	ages[i] = calcAge(years[i]);
+}
+console.log(ages);
+
+// `continue` and `break`
+const types2 = [];
+
+console.log('---- ONLY STRINGS ----');
+for (let i = 0; i < jonasArray.length; i++) {
+	if (typeof jonasArray[i] !== 'string') {
+		continue;
+	}
+	console.log(jonasArray[i], typeof jonasArray[i]);
+	types2.push(typeof jonasArray[i]);
+}
+
+console.log(types2);
+
+console.log('---- BREAK WITH NUMBER ----');
+for (let i = 0; i < jonasArray.length; i++) {
+	if (typeof jonasArray[i] === 'number') break;
+
+	console.log(jonasArray[i], typeof jonasArray[i]);
 }
