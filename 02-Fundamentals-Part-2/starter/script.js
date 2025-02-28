@@ -296,7 +296,6 @@ for (let set = 1; set <= 3; set++) {
 		console.log(`  Lifting weights repetition ${rep} 🏋️‍♂️`);
 	}
 }
-*/
 
 // 47. LOOPING ARRAYS, BREAKING AND CONTINUING -
 
@@ -355,4 +354,29 @@ for (let i = 0; i < jonasArray.length; i++) {
 	if (typeof jonasArray[i] === 'number') break;
 
 	console.log(jonasArray[i], typeof jonasArray[i]);
+}
+*/
+// 48. LOOPING BACKWARDS AND LOOPS IN LOOPS -
+
+const jonasArray = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1991,
+	'teacher',
+	['Michael', 'Peter', 'Steven'],
+	true,
+];
+
+// Looping in reverse
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+	console.log(jonasArray[i]);
+}
+
+// Nested Loops
+for (let exercise = 1; exercise < 4; exercise++) {
+	console.log(`-------- Starting exercise ${exercise}`);
+
+	for (let rep = 1; rep < 6; rep++) {
+		console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} 🏋️‍♂️`);
+	}
 }
